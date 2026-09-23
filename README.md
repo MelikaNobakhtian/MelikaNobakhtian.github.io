@@ -35,6 +35,30 @@ git push
 
 GitHub Pages rebuilds automatically — usually live within a minute.
 
+## Changing the link pills (Email / GitHub / LinkedIn / Scholar)
+
+Each button in the hero is one `<a class="pill" href="...">...</a>` block inside
+`<div class="hero-links">`. To remove one, delete its whole block. To add one,
+copy a block and change the `href`, the label text, and (optionally) the inline
+SVG icon. To just change where a button points, edit its `href` value.
+
+## Publishing any change
+
+Edit → commit → push:
+
+```bash
+git add -A
+git commit -m "Swap Anthology link for Google Scholar"
+git push
+```
+
+GitHub Pages rebuilds automatically (usually under a minute). In your browser,
+refresh with **Ctrl+F5** to bypass the cache if you don't see the change.
+
+You can also edit directly on github.com: open the file in the repo, click the
+pencil (✏️) icon, make the change, and commit via the web page — no terminal
+needed. It pushes to the same place.
+
 ## Adding a news item
 
 Duplicate a `<li>` inside the news list:
